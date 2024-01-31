@@ -12,6 +12,10 @@ def convert_fahr_to_celcius(fahr):
         Temperature in Celcius.
     """
     celcius = (fahr - 32) * (5 / 9)
+    if celsius < -273.15:
+        raise ValueError(
+            f"Trying to convert impossible temperature: {fahr}F"
+        )
     return celcius
 
 def convert_fahr_to_kelvin(fahr):
