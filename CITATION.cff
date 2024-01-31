@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Joe
+  given-names: Johnson
+orcid: https://orcid.org/0000-0000-0000-0000
+title:Pale-Blue-Dot-97/climate-analysis: Release for Zenodo ID
+version: v1.0.1
+date-released: 2024-01-31
