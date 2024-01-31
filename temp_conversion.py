@@ -1,4 +1,12 @@
-"""Module containing functions to convert temperatures between scales."""
+"""Module containing functions to convert temperatures between scales.
+
+Functions:
+    convert_fahr_to_celsius: Converts Fahrenheit to Celsius
+    convert_fahr_to_kelvin: Converts Fahrenheit to Kelvin
+
+Raises:
+    ValueError: If temperature is impossible.
+"""
 
 
 def convert_fahr_to_celcius(fahr):
@@ -10,6 +18,9 @@ def convert_fahr_to_celcius(fahr):
 
     Returns:
         Temperature in Celcius.
+
+    Raises:
+        ValueError: If temperature is impossible.
     """
     celcius = (fahr - 32) * (5 / 9)
     if celsius < -273.15:
