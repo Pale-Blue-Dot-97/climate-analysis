@@ -9,35 +9,35 @@ Raises:
 """
 
 
-def convert_fahr_to_celcius(fahr):
+def convert_fahr_to_celsius(fahr: float) -> float:
     """
-    Converts Fahrenheit to Celcius.
+    Converts Fahrenheit to Celsius.
     
     Args:
-        fahr: Temperature in Fahrenheit.
+        fahr (float): Temperature in Fahrenheit.
 
     Returns:
-        Temperature in Celcius.
+        float: Temperature in Celsius.
 
     Raises:
         ValueError: If temperature is impossible.
     """
-    celcius = (fahr - 32) * (5 / 9)
+    celsius = (fahr - 32) * (5 / 9)
     if celsius < -273.15:
         raise ValueError(
             f"Trying to convert impossible temperature: {fahr}F"
         )
-    return celcius
+    return celsius
 
-def convert_fahr_to_kelvin(fahr):
+def convert_fahr_to_kelvin(fahr: float) -> float:
     """
     Converts Fahrenheit to Kelvin.
 
     Args:
-        fahr: Temperature in Fahrenheit
+        fahr (float): Temperature in Fahrenheit
 
     Returns:
-        Temperature in Kelvin.
+        float: Temperature in Kelvin.
     """
     fahr = convert_fahr_to_celcius(x)
     kelvin = fahr + 273.15
